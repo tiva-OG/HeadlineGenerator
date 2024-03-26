@@ -20,3 +20,10 @@ class DataScraperConfig:
     source_url: str
     categories: list
     max_pages: int
+
+
+@dataclass(frozen=True)
+class DataPreparationConfig:
+    root_dir: Path
+    data_dir: Path
+    save_dir: Path

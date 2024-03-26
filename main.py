@@ -1,5 +1,8 @@
 from headlineGenerator.logging import logger
 from headlineGenerator.pipeline.stage_01_data_scraper import DataScraperPipeline
+from headlineGenerator.pipeline.stage_02_data_preparation import DataPreparationPipeline
+
+
 # from headlineGenerator.pipeline.stage_02_data_preparation import DataPreparationPipeline
 # from headlineGenerator.pipeline.stage_03_data_transformation import DataTransformationPipeline
 # from headlineGenerator.pipeline.stage_04_model_trainer import ModelTrainerPipeline
@@ -17,6 +20,9 @@ def main_template(stage_name, pipeline_class):
         logger.exception(e)
         raise e
 
+
 ##################################################################
-main_template("Data-Scraper STAGE", DataScraperPipeline)
+# main_template("Data-Scraper STAGE", DataScraperPipeline)
+##################################################################
+# main_template("Data-Preparation STAGE", DataPreparationPipeline)
 ##################################################################

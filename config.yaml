@@ -4,5 +4,10 @@ data_scraper:
   root_dir: artifacts/data_scraper
   save_dir: artifacts/data_scraper
   source_url: "https://ait.live/category/"
-  categories: [business, entertainment, sports]
+  categories: [ business, entertainment, sports ]
   max_pages: 2
+
+data_preparation:
+  root_dir: artifacts/data_preparation
+  data_dir: artifacts/data_scraper
+  save_dir: artifacts/data_preparation/news_dataset
