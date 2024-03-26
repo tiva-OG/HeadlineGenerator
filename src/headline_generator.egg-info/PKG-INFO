@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: headline-generator
+Version: 0.0.0
+Summary: a python package for summarization
+Home-page: https://github.com/tiva-og/HeadlineGenerator
+Author: tiva-og
+Author-email: salvationtiva@gmail.com

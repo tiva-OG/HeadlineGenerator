@@ -1,0 +1,16 @@
+README.md
+setup.py
+src/headlineGenerator/__init__.py
+src/headlineGenerator/components/__init__.py
+src/headlineGenerator/config/__init__.py
+src/headlineGenerator/config/configuration.py
+src/headlineGenerator/constants/__init__.py
+src/headlineGenerator/entity/__init__.py
+src/headlineGenerator/logging/__init__.py
+src/headlineGenerator/pipeline/__init__.py
+src/headlineGenerator/utils/__init__.py
+src/headlineGenerator/utils/common.py
+src/headline_generator.egg-info/PKG-INFO
+src/headline_generator.egg-info/SOURCES.txt
+src/headline_generator.egg-info/dependency_links.txt
+src/headline_generator.egg-info/top_level.txt
