@@ -1,6 +1,6 @@
 from headlineGenerator.constants import *
 from headlineGenerator.utils.common import read_yaml, create_directories
-from headlineGenerator.entity import (DataScraperConfig, DataPreparationConfig)
+from headlineGenerator.entity import (DataScraperConfig, DataPreparationConfig, DataTransformationConfig)
 
 
 class ConfigurationManager:
@@ -37,3 +37,17 @@ class ConfigurationManager:
         )
 
         return data_preparation_config
+
+    def get_data_transformation_config(self) -> DataTransformationConfig:
+        config = self.config.data_transformation
+
+        create_directories([config.root_dir])
+
+        data_transformation_config = DataTransformationConfig(
+            root_dir=config.root_dir,
+            data_dir=config.data_dir,
+            save_dir=config.save_dir,
+            checkpoint=config.checkpoint
+        )
+
+        return data_transformation_config

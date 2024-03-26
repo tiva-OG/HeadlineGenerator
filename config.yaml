@@ -11,3 +11,9 @@ data_preparation:
   root_dir: artifacts/data_preparation
   data_dir: artifacts/data_scraper
   save_dir: artifacts/data_preparation/news_dataset
+
+data_transformation:
+  root_dir: artifacts/data_transformation
+  data_dir: artifacts/data_preparation/news_dataset
+  save_dir: artifacts/data_transformation/news_dataset
+  checkpoint: google-t5/t5-small

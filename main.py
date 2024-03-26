@@ -1,6 +1,7 @@
 from headlineGenerator.logging import logger
 from headlineGenerator.pipeline.stage_01_data_scraper import DataScraperPipeline
 from headlineGenerator.pipeline.stage_02_data_preparation import DataPreparationPipeline
+from headlineGenerator.pipeline.stage_03_data_transformation import DataTransformationPipeline
 
 
 # from headlineGenerator.pipeline.stage_02_data_preparation import DataPreparationPipeline
@@ -25,4 +26,6 @@ def main_template(stage_name, pipeline_class):
 # main_template("Data-Scraper STAGE", DataScraperPipeline)
 ##################################################################
 # main_template("Data-Preparation STAGE", DataPreparationPipeline)
+##################################################################
+main_template("Data-Transformation STAGE", DataTransformationPipeline)
 ##################################################################

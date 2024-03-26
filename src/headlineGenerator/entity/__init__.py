@@ -27,3 +27,11 @@ class DataPreparationConfig:
     root_dir: Path
     data_dir: Path
     save_dir: Path
+
+
+@dataclass(frozen=True)
+class DataTransformationConfig:
+    root_dir: Path
+    data_dir: Path
+    save_dir: Path
+    checkpoint: Path
