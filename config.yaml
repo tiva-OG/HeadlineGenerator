@@ -17,3 +17,8 @@ data_transformation:
   data_dir: artifacts/data_preparation/news_dataset
   save_dir: artifacts/data_transformation/news_dataset
   checkpoint: google-t5/t5-small
+
+model_trainer:
+  root_dir: artifacts/model_trainer
+  data_dir: artifacts/data_transformation/news_dataset
+  checkpoint: google-t5/t5-small
