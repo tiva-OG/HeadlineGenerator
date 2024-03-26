@@ -1,16 +1,16 @@
 transformers
 transformers[sentencepiece]
-datasets
+datasets~=2.18.0
 sacrebleu
 rouge_score
 py7zr
-pandas
+pandas~=2.0.3
 nltk
-tqdm
-PyYAML
+tqdm~=4.66.2
+PyYAML~=6.0.1
 matplotlib
-selectolax
-httpx
+selectolax~=0.3.21
+httpx~=0.27.0
 notebook
 torch==2.2.0
 torchvision==2.2.0
@@ -19,7 +19,9 @@ boto3
 mypy-boto3-s3
 python-box==6.0.2
 ensure==1.0.2
-fastapi==0.78.0
-uvicorn==0.18.3
+fastapi~=0.110.0
+uvicorn~=0.29.0
 Jinja2==3.1.2
+starlette~=0.36.3
+setuptools~=68.2.0
 # -e .
